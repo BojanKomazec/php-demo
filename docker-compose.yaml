@@ -11,6 +11,7 @@ services:
   php-fpm:
     build:
       context: ./app
+      dockerfile: ./dockerfile/php_fpm_debian.Dockerfile
     volumes:
       - ./app:/var/www/html
     networks:
